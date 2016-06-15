@@ -1,0 +1,83 @@
+.c-card {
+  margin-bottom: 30px;
+  &__imageWrapper {
+    height: 200px;
+    position: relative;
+  }
+  &__darken {
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__line {
+    position: absolute;
+    top: 49%;
+    left: 45%;
+    right: 45%;
+    height: 2px;
+    background-color: white;
+  }
+  &__price {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+  }
+  &__image {
+    height: 100%;
+    background-size: cover;
+
+    &--wedding {
+      background-image: url('../img/eskuvo4.jpg');
+    }
+    &--bachelorette {
+      background-image: url('../img/lanybucsu2.jpg');
+    }
+    &--bachelor {
+      background-image: url('../img/legenybucsu2.jpg');
+    }
+    &--birthday {
+      background-image: url('../img/szuletesnap2.jpg');
+    }
+    &--anniversary {
+      background-image: url('../img/evfordulo2.jpg');
+    }
+    &--ceremony {
+      background-image: url('../img/szertartas.jpg');
+    }
+  }
+  &__imageForSeo {
+    display: none;
+  }
+  &__content{
+    background-color: rgba(239, 239, 239, .5);
+  }
+  &__list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+  }
+  &__listElement {
+    padding: 5px 0;
+  }
+  &__title {
+    position: absolute;
+    top: 20%;
+    left: 15px;
+    right: 15px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+  }
+}
