@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, src: ['source/img/*'], dest: 'build/img/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['source/img/*'], dest: 'build/img/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['node_modules/normalize.css/normalize.css'], dest: 'build/css/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['node_modules/bootstrap-grid/dist/grid.min.css'], dest: 'build/css/', filter: 'isFile'},
         ]
@@ -55,16 +55,6 @@ module.exports = function(grunt) {
             'source/js/script.js'
           ]
         }
-      }
-    },
-
-    copy: {
-      main: {
-        files: [
-          {expand: true, flatten: true, src: ['source/img/*'], dest: 'build/img/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['node_modules/normalize.css/normalize.css'], dest: 'build/css/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['node_modules/bootstrap-grid/dist/grid.min.css'], dest: 'build/css/', filter: 'isFile'},
-        ]
       }
     },
 
