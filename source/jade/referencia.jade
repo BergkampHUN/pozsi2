@@ -1,0 +1,139 @@
+include ./components/header.mixin.jade
+include ./components/slideshow.mixin.jade
+
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Referencia
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/grid.min.css')
+        link(rel='stylesheet', href='/css/pgwslider.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .container
+            +header
+
+        .container.flags
+            img(src='/img/hu_flag.png')
+            a(href="/en/references", title="references")
+                img(src='/img/uk_flag.png')
+
+        .container
+            aside.menu
+                ul
+                    li
+                        a.menu-link(href="/hu/rolunk", title="Rólunk") Rólunk
+                    li
+                        a.menu-link(href="/hu/tevekenyseg", title="Tevékenység") Tevékenység
+                    li
+                        a.menu-link(href="/hu/referencia", title="Referencia") Referencia
+                    li
+                        a.menu-link(href="/hu/elerhetoseg", title="Elérhetőség") Elérhetőség
+                    li
+                        a.menu-link(href="/hu/allasajanlatok", title="Állásajánlatok") Állásajánlatok
+
+            article.content
+                +slideshow
+                h1.title Referencia
+                h2 Utak tervezéséhez kapcsolódó referenciáink:
+                ul
+                    li M3 autópálya Polgár-Görbeháza közötti szakasz, engedélyezési terv
+                    li M35 engedélyezési kiviteli tervek pálya, műtárgyak
+                    li Bóly Országhatár engedélyezési tervek pálya műtárgyak
+                    li M7 125,30 – 145,00 G2-G7 támfalakhoz talajmechanikai szakvélemény
+                    li Pápa Bázis Repülőtér C17 Repülőgép Álláshelyek Kialakítása
+                    li M60 autópálya Bóly-Szentlőrinc szakasz, engedélyezési terv
+                    li M9 autópálya 51-54 sz. főút közötti sz., kiviteli terv
+                    li M7 autópálya Sávoly-Zalakomár közötti szakasz
+
+                h2 Műtárgyak tervezéséhez kapcsolódó referenciáink:
+                ul
+                    li Köröshegyi völgyhíd kiviteli tervszintű geotechnikai szakvélemény, próbaterhelések kiértékelése, mozgásvizsgálat
+                    li Tiszazugi Tisza híd, Kiviteli terv
+                    li Budapest, Ferdinánd híd felújítás, átépítés kiviteli terve
+                    li Esztergom, Mária Valéria Duna-híd kiviteli terv
+                    li M9 Autópálya Szekszárdi Duna-híd kiviteli terv
+                    li Maglód M0 vasúti hídfők vizsgálata
+                    li Mezőtúr- Gyoma  Hortobágy-Berettyó hídd átépítéséhez geotechnikai szakvélemény
+                    li Márkó völgyhíd geotechnikai szakvélemény kiviteli munkák geotechnikai vonatkozásai rézsűvédelem, hídbehúzás stb.
+                    li Szolnoki Tisza gyalogoshíd
+                    li M43 Tisza híd engedélyezési, kiviteli geotechnikai szakvélemény, próbaterhelések kiértékelése
+                    li Vásárosnaményi Tisza-híd, engedélyezési terv
+
+                h2 Vasúti tervezéshez kapcsolódó referenciáink:
+                ul
+                    li Szajol(kiz) - Püspökladány(bez) engedélyezési terv
+                    li Nyíregyháza Záhony vv Nyíregyháza(kiz) – Demecser(bez)
+                    li Szombathely – Szentgotthárd – OH   vv.
+                    li Börgönd(kiz) – Pusztaszabolcs(kiz) vv.
+                    li Budapest – Esztergom vv.
+                    li Bp Szentendrei ú – Dorog (kiz) vv.
+                    li Székesfehérvár(kiz) – Boba(kiz) vv
+                    li Mintegy310 km vasútvonal rekonstrukció tervezése
+                    li Ezekben a munkákban a vonali és műtárgy, kapcsolódó, keresztező út és műtárgyak épületek, felsővezeték stb. talajmechanikai vizsgálatai
+
+                h2 Egyedi vasúti szakaszok, műtárgyak szakvélemények , szakértői munkák készítése:</h4>
+                ul
+                    li MÁV árvízi munkák szakaszok és híd háttöltések vizsgálata
+                    li Bp –Esztergom Piliscsabai alagút
+                    li Sárbogárd – Rétszilas 862-864 között lokális alépítményi probléma megoldására geotechnikai terv
+                    li Biatorbágy RYNART raktárbázishoz erősített talajtámfal Geotechnikai terv
+                    li Eger-Putnok rézsűromlások geotechnikai szakvéleményei geotechnikai tervek
+
+                h2 Alépítményi szakértések:</h4>
+                ul
+                    li Zalalövő-Bajánsenye-OH 379 – 416  töltésrézsű vizsgálatok
+                    li Herend lokális pályahiba vizsgálata geotechnikai megvalósulási terve
+                    li Városlőd - Kislőd lokális pályahiba vizsgálata (676-683), geotechnikai terve
+                    li Gödöllő nagybevágás bal és jobb oldal állékonysági vizsgálata
+                    li Balatonakarattya csúszásvizsgálat és geotechnikai terv
+
+                h2 Közművek tervezéséhez kapcsolódó referenciáink:
+                ul
+                    li Budaörs, Tétényi-Fennsík Ingatlanberuházás,Fejlesztési Terület Út És Közműellátásához SzükségesTerületen Belüli És Kívüli Tervezési Feladatok
+                    li Kazincbarcikai ipari park közműellátása és inkubátor házának alapozása, geotechniaki szakvélemény
+                    li Budaörs, Vak Bottyán utca. Deák Ferenc utca csatornázása, felújítása geotechniaki szakvélemény
+
+                h2 Magasépítés tervezéséhez kapcsolódó referenciáink:
+                ul
+                    li Ferihegy T2 terminál bővítése geotechnikai szakvélemény
+                    li Mercedes Kecskemét Vonatkozó német szakvélemények honosítása engedélyezési eljárásokhoz
+                    li Porsche Autószalon, Budapest XI. Ker
+                    li Geotechnikai Szakvélemény Ferihegy, Új Cargo Bázis
+                    li Malév Irodaház, engedélyezési és kiviteli terv
+                    li Délmagyarország Nyomdaközpont tervezett épületének süllyedésvizsgálata
+                    li Tiszapalkonya, Gabonasiló alapozása
+                    li Sopronbánfalva, Kolostorrekonstrukció
+                    li Határállomások, töltőállomások, mérnökségi telepek, antennatornyok...
+
+                h2 Egyéb geotechnikával kapcsolatos referenciáink:
+                ul
+                    li Százhalombatta Urbánium víztelenítése
+
+                h2 Környezetvédelemmel kapcsolatos referenciáink:
+                ul
+                    li Környezetvédelmi Elővizsgálat A 4. Számú Főút 56,0-60,6 Km Szelvény Között Környezetvédelmi Elővizsgálat A Csepeli Gerincút M0 Autóút És Lórév Közötti Szakasz I. Ütemének Engedélyezési Tervéhez
+                    li Környezeti Állapotfelmérés A Szada, Ipari Park
+                    li Környezeti Állapotfelmérés 42-Es Villamosvonal És A Lajozsmizsei V.V. Keresztezése
+                    li Környezeti Állapotfelmérés Miskolc, Autosol Kft.
+                    li Környezeti Állapotfelmérés Miskolc, Terra Autó Kft.
+                    li Környezeti Állapotfelmérés Hajmáskér-Balatonfűzfő Vasútvonal
+                a(href="/en/references", title="references")
+                    img.flag(src='/img/uk_flag.png')
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+        script(src='/js/pgwslider.js')
+        script(src='/js/script.min.js')

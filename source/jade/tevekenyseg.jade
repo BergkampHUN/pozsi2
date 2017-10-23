@@ -1,0 +1,129 @@
+include ./components/header.mixin.jade
+include ./components/slideshow.mixin.jade
+
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Tevékenység
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/grid.min.css')
+        link(rel='stylesheet', href='/css/pgwslider.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .container
+            +header
+
+        .container.flags
+            img(src='/img/hu_flag.png')
+            a(href="/en/activities", title="activities")
+                img(src='/img/uk_flag.png')
+
+        .container
+            aside.menu
+                ul
+                    li
+                        a.menu-link(href="/hu/rolunk", title="Rólunk") Rólunk
+                    li
+                        a.menu-link(href="/hu/tevekenyseg", title="Tevékenység") Tevékenység
+                    li
+                        a.menu-link(href="/hu/referencia", title="Referencia") Referencia
+                    li
+                        a.menu-link(href="/hu/elerhetoseg", title="Elérhetőség") Elérhetőség
+                    li
+                        a.menu-link(href="/hu/allasajanlatok", title="Állásajánlatok") Állásajánlatok
+
+            article.content
+                +slideshow
+                h1.title Tevékenységek
+                p A feltárásokat és azok kiértékelését a 2011 január. 1.-től kötelezően alkalmazandó EUROCODE előírásai szerinti talajvizsgálati jelentés és geotechnikai terv formájában készítjük és dokumentáljuk. Külön megbízói kérésre készítünk tervezői állásfoglalásokat, tervellenőrzéseket, szakértői véleményezést is.
+
+                h2 Utak
+
+                p Társaságunk ezen a téren rendelkezik a legtöbb referenciával. Alapításunk óta folyamatosan részt veszünk számos autópálya, autóút, település elkerülő utak és önkormányzati utak építéséhez, korszerűsítéséhez kapcsolódó geotechnikai tervezésben.
+                p Az úttervezés kapcsán felmerülő legfontosabb geotechnikai feladatok a teljesség igénye nélkül:
+                ul
+                    li Lehetséges nyomvonalak környezetében lévő talajféleségek feltérképezése, mintavételezés
+                    li Nyomvonalak legkedvezőbb vízszintes és függőleges vonalvezetésének kiválasztása
+                    li Töltésalapozások tervezése (geoműanyagok alkalmazása, mélykeverés, dinamikus talajkiékelés, talajcsere stb.), földmű anyagára vonatkozó előírások meghatározása, fagyvédő és javító réteg tervezése
+                    li Magas töltések esetén rézsűállékonysági vizsgálatok, konszolidáció és süllyedés számítás, konszolidáció gyorsításának tervezése (kavicscölöpözés, drénezés, stb.)
+                    li Mély bevágások esetén rézsűállékonysági vizsgálatok, víztelenítési feladatok tervezése, stabilitásjavító beavatkozások tervezése (talajszegezés, kihorgonyzás, erózió elleni védelem stb.) és különböző támasztószerkezetek tervezése
+                    li Töltésszélesítés esetén a szélesítésre vonatkozó követelmények meghatározása
+                    li Stb.
+                p Az úttervezéshez kapcsolódó legfontosabb referenciáink az alábbi linkre kattintva tekinthetők meg.
+                    a.greenlink(href="http://www.geoterra.hu/hu/referencia", title="referencia utak")  >>>
+
+                h2 Műtárgyak
+
+                p A legtöbb út vonalvezetése áthalad bizonyos tereptárgyakaon, utakaon, vasutakaon, melyeknél nincs lehetőség a szintbeli keresztezésre. Ilyen esetekben aluljárók,felüljárók, csőátereszek, vadátjárók tervezése válik szükségessé.
+                p A műtárgyak tervezése kapcsán felmerülő legfontosabb geotechnikai feladatok a teljesség igénye nélkül:
+                ul
+                    li Műtárgy alapozásának meghatározása a feltárások illetve a rendelkezésünkre bocsátott méterek/terhek alapján
+                    li Síkalapozás esetén az alapozás mélységének meghatározása, az alaptest méreteinek meghatározása, az alaptest süllyedésének számítása
+                    li Cölöpalapozás esetén a cölöpök fajtájának, átmérőjének és mélységének meghatározása, az egyes cölöpök határteherbírásának számítása, cölöpök süllyedésének, elmozdulásának számítása, szükség esetén a negatív köpenysúrlódást is figyelembe véve
+                    li Cölöpök próbaterhelésének vizsgálata, kiértékelése
+                    li A hídfők és a pillérek közötti süllyedéskülönbségek számítása, javaslattétel a süllyedéskülönbségek minimalizálására
+                    li Háttöltések kialakításának meghatározása
+                    li Aluljárók tervezése esetén a földnyomás illetve a talajvíznyomás meghatározása
+                    li Munkagödrök határolásának, víztelenítésének tervezése
+                    li Stb.
+                p A műtárgyak tervezéséhez kapcsolódó legfontosabb referenciáink az alábbi linkre kattintva tekinthetők meg
+                    a.greenlink(href="http://www.geoterra.hu/hu/referencia", title="referencia mutargyak")  >>>
+
+                h2 Vasút
+
+                p Az elmúlt időszakban a súlypont kismértékű elmozdulása volt megfigyelhető a közlekedési ágazatban a vasút irányába. Ennek is szerepe volt abban, hogy több vasútvonal rekonstrukciójának tervezésében is részt vett Társaságunk.
+                p A vasútvonalak rekonstrukciójának geotechnikai tervezése hasonlít is az útépítéshez, de újabb faladatok megoldását, valamivel másabb látásmódot is megköveteli a gyakorló mérnöktől.
+                ul
+                    li A forgalom alatti vasútvonalakon a feltárások kivitelezése nagy odafigyelést, pontosságot és a vasúti szakágakkal komoly együttműködést követel meg
+                    li A régi nyomvonalon a meglévő töltések és bevágások geotechnikai viszonyainak értékelése, és az alapján a tervezés a meglévő adottságok miatt nagy körültekintést követel meg
+                    li Az új vonalszakaszokon, nyomvonal korrekciókon a geotechnikai feladatok az új úttervezési feladatokhoz hasonlóak, azonban a meglévő adottságként a viszonylag mozgásmentes szakaszhoz történő csatlakozás főként a töltésalapozások során komoly feladatokat jelent
+                    li A megemelt sebesség és tengelyterhelések a meglévő földművek megerősítését teszik szükségessé, amelyek során új, modern szerkezetek (geoműanyagok, szivárgópaplanok stb.) kerülnek szóba, és amelyek tervezésénél a vasútra jellemző óvatossággal és alapossággal kell eljárni a tervezés során
+                    li A vízszintes és magassági vonalvezetés kötöttségei sokszor mély bevágásokat és nagy töltéseket eredményeznek, melyek állékonysági vizsgálata jelentős feladat.
+                    li Sok esetben a 100-120 éves műtárgyak csatlakozó földművei és az ugyanilyen korú pálya földműveinek vizsgálata és rendeltetésszerű használatra alkalmassá tétele nagy feladat
+                p A vasúti tervezéséhez kapcsolódó legfontosabb referenciáink az alábbi linkre kattintva tekinthetők meg
+                    a.greenlink(href="http://www.geoterra.hu/hu/referencia", title="referencia vasut")  >>>
+
+                h2 Közművek
+
+                p A közművek tervezése kapcsán felmerülő legfontosabb geotechnikai feladatok a teljesség igénye nélkül:
+                ul
+                    li A közművek nyomvonala mentén lévő talajok meghatározása
+                    li A munkagödrök állékonyságának számítása, munkatérhatárolás tervezése
+                    li Magas talajvízállás esetén a munkagödrök víztelenítésének tervezése
+                    li Csőátsajtolás esetén a sajtolás tervezéséhez szükséges talajfizikai paraméterek meghatározása, geotechnikai tervek készítése
+                    li Visszatöltésre vonatkozó követelmények meghatározása
+                p A közművek tervezéséhez kapcsolódó legfontosabb referenciáink az alábbi linkre kattintva tekinthetők meg
+                    a.greenlink(href="http://www.geoterra.hu/hu/referencia", title="referencia kozmuvek")  >>>
+
+                h2 Magasépítés
+
+                p Napjainkban a városok sűrű beépítettsége, a települések terjeszkedése illetve a magas telekárak miatt egyre sűrűbben fordul elő, hogy az eddig alapozás szempontjából kedvezőtlen területeket is beépítenek. Ezek a kedvezőtlen, vagy nehezen beépíthető területek sok esetben speciális tervezési feladatokat igényelnek. A nagyvárosokban tapasztalható foghíjbeépítések, valamint a többszintes mélygarázsok tervezése is számos geotechnikai problémát vet fel. A magasépítés kapcsán felmerülő legfontosabb geotechnikai feladatok a teljesség igénye nélkül:
+                ul
+                    li Alapozás módjának meghatározása a talaj, talajvíz adottságok és az épület átadódó terhelésének függvényében
+                    li Víztelenítés tervezése különös tekintettel pince illetve többszintes mélygarázs esetén
+                    li Munkatérhatárolás tervezése
+                    li Emeletráépítés esetén meglévő alaptest feltárása, a megnövekedett teherbírási igény ellenőrzése, szükség esetén a meglévő alaptestek megerősítése
+                    li Hozzáépítés esetén az épületrészek közötti eltérő mozgások minimalizálása
+                    li Ipari létesítmények esetén a gépek, berendezések alapjainak tervezése, a megnövekedett igénybevételek és az esetleges dinamikus terhek figyelembevételével
+                    li Antennatornyok, víztározó tornyok (hidroglóbusz), tartályok alapozásának tervezése
+                p A magasépítések tervezéséhez kapcsolódó legfontosabb referenciáink az alábbi linkre kattintva tekinthetők meg
+                    a.greenlink(href="http://www.geoterra.hu/hu/referencia", title="referencia magasepites")  >>>
+                a(href="/en/activities", title="activities")
+                    img.flag(src='/img/uk_flag.png')
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+        script(src='/js/pgwslider.js')
+        script(src='/js/script.min.js')

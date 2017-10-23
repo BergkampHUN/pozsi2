@@ -1,0 +1,69 @@
+include ./components/header.mixin.jade
+include ./components/slideshow.mixin.jade
+
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Rólunk
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/grid.min.css')
+        link(rel='stylesheet', href='/css/pgwslider.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .container
+            +header
+
+        .container.flags
+            img(src='/img/hu_flag.png')
+            a(href="/en/about_us", title="about us")
+                img(src='/img/uk_flag.png')
+
+        .container
+            aside.menu
+                ul
+                    li
+                        a.menu-link(href="/hu/rolunk", title="Rólunk") Rólunk
+                    li
+                        a.menu-link(href="/hu/tevekenyseg", title="Tevékenység") Tevékenység
+                    li
+                        a.menu-link(href="/hu/referencia", title="Referencia") Referencia
+                    li
+                        a.menu-link(href="/hu/elerhetoseg", title="Elérhetőség") Elérhetőség
+                    li
+                        a.menu-link(href="/hu/allasajanlatok", title="Állásajánlatok") Állásajánlatok
+
+            article.content
+                +slideshow
+                h1.title Rólunk
+                p A Geo-Terra Kft-t Pozsár László – geológusmérnök, geotechnikai szakmérnök, geotechnikai vezető tervező és tervellenőr, geotechnikai szakértő – alapította 1992 novemberében. Az alapítás óta a cég tevékenységi köre folyamatosan bővül, kezdetben klasszikus geotechnikai feladatokat láttunk el, úgymint utak, autópályák és az ezekhez kapcsolódó műtárgyak tervezése, valamint épületek, csarnokok alapozásához kapcsolódó geotechnikai tervezés. Az évek múlásával a geotechnika speciális területein is komoly tapasztalatra és elismerésre tettünk szert. Részt vettünk csúszásveszélyes területek állékonyságvizsgálatában, támfaltervezésben, épületkár vizsgálatokban, földművek és árvédelmi töltések vizsgálatában, anyagnyerőhelykutatásban és víztelenítési feladatokban. Az utóbbi néhány évben erőforrásaink jelentős részét a vasutakhoz kapcsolódó speciális geotechnikai tervezési feladatok köré csoportosítottuk, minek köszönhetően elmondhatjuk, hogy ezen a téren is megfelelő szakértelemre és tapasztalatra tettünk szert.
+                p A geotechnikai tervezés mellett foglalkozunk környezeti állapotfelmérésekkel, környezeti elővizsgálatok készítésével, illetve talaj és talajvíz felszín alatti közegből történő mintavételezésével is.
+                p Tervezőink a geotechnika területén teljes körű jogosultságokkal és kellő tapasztalattal rendelkeznek. Mérnökeink eltérő, de egymáshoz mégis közel álló (geológus, hidrogeológus, építő mérnök, bányamérnök, környezetmérnök) specifikus ismeretei révén képesek vagyunk a modern geotechnikai szemléletnek megfelelő, magas színvonalú komplex szaktervek készítésére.
+                p A tervezői munkánkat a legmodernebb geotechnikai (Plaxis, Geo-5, Settle3D, Slide 5.0, Unicone, CPT-Pro, CPeT-IT) és rajzi (AutoCAD) szoftverek segítik elő.
+                p Alvállalkozóink kiválasztásánál nagy hangsúlyt fektetünk a megbízhatóságra, minőségre és a határidők pontos betartására. A feltárásokat és a laborvizsgálatokat a legmodernebb talajmintavételi eszközökkel és vizsgáló műszerekkel felszerelt állandó alvállalkozóinkkal végeztetjük. A környezetvédelmi laborvizsgálatokat és mintavételezést az erre a célra akkreditált vizsgálólaboratóriummal végeztetjük.
+                p Megbízói körünk a magánszemélyektől a különböző tervezőirodákon át egészen az önkormányzati / állami megbízásokig terjed. A munka volumenétől függetlenül megbízóinkkal szoros szakmai kapcsolatot tartunk fenn, így az egyedi igényeknek, elvárásoknak megfelelő, magas szakmai színvonaló szakterveket készítünk számukra.
+                p Tervezőink tagjai a&nbsp;
+                    a.greenlink(href="http://www.geotechnikaitagozat.hu/", title="Magyar Mérnöki Kamara Geotechnikai Tagozat") Magyar Mérnöki Kamara Geotechnikai Tagozatának
+                    |, különböző eseti bizottságoknak, ezen kívül részt vállalunk a bevezetés előtt álló geotechnikai szabványok előkészítésében, fordításában is. Alkalmazottaink szakmai fejlődése érdekében folyamatosan részt veszünk a geotechnikai/környezetvédelmi konferenciákon, továbbképzéseken, szakmai szerveződéseken. Az évek során szerzett tapasztalatainkat és megfigyeléseinket, az illetékes szakmai fórumokon is rendszeresen közzétesszük.
+                p Cégünk elkötelezett híve az új és korszerű technológiák elsajátításának és ezek széles körben való elterjesztésének. Jelentős szerepünk volt a CPT szondázás alkalmazásának magyarországi elterjedésében, valamint állandó alvállalkozóink révén nagy sikerrel veszünk részt a legújabb és legkorszerűbb geotechnikai/környezetvédelmi mintavételi eljárások és terepi kutatások alkalmazásában és fejlesztésében.
+                p A Geo-Terra Kft. az Allianz Hungária Biztosító Zrt.-nél kötött tervezői felelősségbiztosítással, valamint MSZ EN ISO 9001:2009 Minőségbiztosítási rendszerrel rendelkezik a tervezés és talajmechanikai laborvizsgálatok területén.
+                a(href="/en/about_us", title="about us")
+                    img.flag(src='/img/uk_flag.png')
+
+
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+        script(src='/js/pgwslider.js')
+        script(src='/js/script.min.js')

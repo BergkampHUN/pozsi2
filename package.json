@@ -23,6 +23,8 @@
     "jquery.scrollto": "^2.1.2"
   },
   "dependencies": {
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.1.1",
+    "pgwslider": "^2.3.1",
+    "zepto": "^1.2.0"
   }
 }

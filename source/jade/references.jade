@@ -1,0 +1,82 @@
+include ./components/header.mixin.jade
+include ./components/slideshow.mixin.jade
+
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title References
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/grid.min.css')
+        link(rel='stylesheet', href='/css/pgwslider.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .container
+            +header
+
+        .container.flags
+            a(href="/hu/referencia", title="referencia")
+                img(src='/img/hu_flag.png')
+            img(src='/img/uk_flag.png')
+
+        .container
+            aside.menu
+                ul
+                    li
+                        a.menu-link(href="/en/about_us", title="About us") About us
+                    li
+                        a.menu-link(href="/en/activities", title="Activities") Activities
+                    li
+                        a.menu-link(href="/en/references", title="References") References
+                    li
+                        a.menu-link(href="/en/contact", title="Contact") Contact
+
+            article.content
+                +slideshow
+                h1.title References
+                h2 Major references concerning road engineering
+                ul
+                    li Under construction. Please heck back in a few days.
+
+                h2 Major references concerning engineering structures
+                ul
+                    li Under construction. Please heck back in a few days.
+
+                h2 Major references concerning railway engineering
+                ul
+                    li Under construction. Please heck back in a few days.
+
+                h2 Major references concerning Pulic Utility Lines
+                ul
+                    li Under construction. Please heck back in a few days.
+
+                h2 Major references concerning civil engineering
+                ul
+                    li Under construction. Please heck back in a few days.
+
+                h2 Major references concerning other geotechnical design
+                ul
+                    li Under construction. Please heck back in a few days.
+
+                h2 Major references concerning environmental engineering
+                ul
+                    li Under construction. Please heck back in a few days.
+                a(href="/hu/referencia", title="referencia")
+                    img.flag(src='/img/hu_flag.png')
+
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+        script(src='/js/pgwslider.js')
+        script(src='/js/script.min.js')

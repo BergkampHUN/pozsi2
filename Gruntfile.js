@@ -1,12 +1,14 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     copy: {
       main: {
         files: [
-          {expand: true, flatten: true, src: ['source/img/*'], dest: 'build/img/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['node_modules/normalize.css/normalize.css'], dest: 'build/css/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['node_modules/bootstrap-grid/dist/grid.min.css'], dest: 'build/css/', filter: 'isFile'},
+          { expand: true, flatten: true, src: ['source/img/*'], dest: 'build/img/', filter: 'isFile' },
+          { expand: true, flatten: true, src: ['node_modules/normalize.css/normalize.css'], dest: 'build/css/', filter: 'isFile' },
+          { expand: true, flatten: true, src: ['node_modules/bootstrap-grid/dist/grid.min.css'], dest: 'build/css/', filter: 'isFile' },
+          { expand: true, flatten: true, src: ['node_modules/pgwslider/pgwslider.min.css'], dest: 'build/css/', filter: 'isFile' },
+          { expand: true, flatten: true, src: ['source/js/pgwslider.js'], dest: 'build/js/', filter: 'isFile' },
         ]
       }
     },
@@ -41,7 +43,15 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         files: {
-          "build/index.html": "source/jade/main.jade"
+          "build/index.html": "source/jade/index.jade",
+          "build/tevekenyseg.html": "source/jade/tevekenyseg.jade",
+          "build/referencia.html": "source/jade/referencia.jade",
+          "build/elerhetoseg.html": "source/jade/elerhetoseg.jade",
+          "build/allasajanlatok.html": "source/jade/allasajanlatok.jade",
+          "build/references.html": "source/jade/references.jade",
+          "build/contact.html": "source/jade/contact.jade",
+          "build/activities.html": "source/jade/activities.jade",
+          "build/about_us.html": "source/jade/about_us.jade",
         }
       }
     },
@@ -50,8 +60,6 @@ module.exports = function(grunt) {
       my_target: {
         files: {
           'build/js/script.min.js': [
-            'node_modules/jquery/dist/jquery.js',
-            'node_modules/jquery.scrollto/jquery.scrollTo.js',
             'source/js/script.js'
           ]
         }
@@ -60,11 +68,11 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: [ 'source/scss/main.scss', 'source/scss/components/*', 'source/scss/config/*' ],
+        files: ['source/scss/main.scss', 'source/scss/components/*', 'source/scss/config/*'],
         tasks: ['sass', 'autoprefixer', 'cssmin']
       },
       jade: {
-        files: [ 'source/jade/*.jade' ],
+        files: ['source/jade/*.jade', 'source/jade/components/*.jade'],
         tasks: ['jade']
       },
       uglify: {
@@ -72,7 +80,7 @@ module.exports = function(grunt) {
         tasks: ['uglify']
       },
       copy: {
-        files: ['source/img/*.jpg'],
+        files: ['source/img/*.jpg', 'source/img/*.png'],
         tasks: ['copy']
       }
     },

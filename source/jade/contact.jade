@@ -1,0 +1,74 @@
+include ./components/header.mixin.jade
+include ./components/slideshow.mixin.jade
+
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Contact
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/grid.min.css')
+        link(rel='stylesheet', href='/css/pgwslider.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .container
+            +header
+
+        .container.flags
+            a(href="/hu/elerhetoseg", title="elerhetoseg")
+                img(src='/img/hu_flag.png')
+            img(src='/img/uk_flag.png')
+
+        .container
+            aside.menu
+                ul
+                    li
+                        a.menu-link(href="/en/about_us", title="About us") About us
+                    li
+                        a.menu-link(href="/en/activities", title="Activities") Activities
+                    li
+                        a.menu-link(href="/en/references", title="References") References
+                    li
+                        a.menu-link(href="/en/contact", title="Contact") Contact
+
+            article.content
+                +slideshow
+                h1.title Contact
+                img(src='/img/elerhetoseg_0.jpeg' alt='geo-terra epulet')
+                h2 Geo-Terra Kft.
+
+                p Address:15. Kelenvölgyi str. Budapest, Hungary 1223 .
+                    br
+                    | Telephone:+36-1-2065131
+                    br
+                    | Fax:+36-1-2063395
+                    br
+                    | e-mail: geoterra@geoterra.hu
+                    br
+                    | web:
+                    a.greenlink(href="http://www.geoterra.hu", title="www.geoterrea.hu")  www.geoterra.hu
+                h2 You can come to our place:
+                iframe(width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDd9gd0yCEu3EV6qmVZ1OLtM-RqX9Wh7V8&q=Geo-Terra+Kft." allowfullscreen)
+
+                h2 By car:
+                p From the Inner City of Budapest drive on Mainroad 7 /Road to Balaton/ and you will find us approx. 500 m ahead of the Statues Park, on the right side
+                h2 By community transport:
+                p Take bus 150 from Fehérvári út or Campona, and get off at stop Budatétény petrol station. Take long-distance coaches from Kelenföld Railway Station either to Százhalombatta (No. 710), Pusztazámor (No. 722) or Érd (No. 720), and get off at stop Budatétény petrol station.
+                a(href="/hu/elerhetoseg", title="elerhetoseg")
+                    img.flag(src='/img/hu_flag.png')
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+        script(src='/js/pgwslider.js')
+        script(src='/js/script.min.js')

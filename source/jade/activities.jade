@@ -1,0 +1,120 @@
+include ./components/header.mixin.jade
+include ./components/slideshow.mixin.jade
+
+doctype
+html.no-js
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Activities
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+        link(rel='stylesheet', href='/css/normalize.css')
+        link(rel='stylesheet', href='/css/grid.min.css')
+        link(rel='stylesheet', href='/css/pgwslider.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        <!--[if lt IE 8]>
+        p.browsehappy
+            | You are using an <strong>outdated</strong> browser.
+            | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+            | to improve your experience.
+        <![endif]-->
+        .container
+            +header
+
+        .container.flags
+            a(href="/hu/tevekenyseg", title="tevekenyseg")
+                img(src='/img/hu_flag.png')
+            img(src='/img/uk_flag.png')
+
+        .container
+            aside.menu
+                ul
+                    li
+                        a.menu-link(href="/en/about_us", title="About us") About us
+                    li
+                        a.menu-link(href="/en/activities", title="Activities") Activities
+                    li
+                        a.menu-link(href="/en/references", title="References") References
+                    li
+                        a.menu-link(href="/en/contact", title="Contact") Contact
+
+            article.content
+                +slideshow
+                h1.title Activities
+                p Exposures and their evaluation are made and documented in the form of a soil test report and geotechnical design according to the rules set out in EUROCODE to be applied mandatorily as from January 1, 2011. Upon request from Customer, designer`s opinions, design checking and expertise are also performed.
+
+                h2 Geotechnical design - Road engineering
+
+                p It is the field where our company has the major part of references. Since the time our company was founded we have been involved in geotechnical designing related to the construction and upgrading of a number of motorways, expressways, bypass roads and local governmental roads.
+                p Major geotechnical tasks related to road engineering include but not are limited to, as follows:
+                ul
+                    li To map sorts of ground in the vicinity of possible routes, including sampling
+                    li To select the best vertical and horizontal alignment for each route
+                    li To design embankment foundations (use of geoplastics, deep mixing, dynamic ground wedging, soil exchange, etc.), to determine specifications for earthwork material, and to design anti-freeze and improving courses
+                    li For high embankments, to perform slope stability tests, consolidation and subsidence calculations, to design acceleration of consolidation (gravel piling, drainage, etc)
+                    li For deep cuts, to perform slope stability tests, to design drainage tasks, stability-improving interventions such as ground nailing, anchorage, protection against erosion, etc. and to design different supporting structures
+                    li For embankment widening, to determine requirements specific to widening
+                    li Etc.
+                p To view our major references concerning road engineering, please click to the following link.
+                    a.greenlink(href="http://www.geoterra.hu/hu/references", title="references")  >>>
+
+                h2 Geotechnical design – Engineering structures
+
+                p For most roads, the route crosses certain field objects, roads, railways for which there is no option of an at-grade crossing. In such cases, it is necessary to design underpasses, overpasses, culverts, game passes.
+                p The major geotechnical tasks related to the designing of engineering structures include, but are not limited to, as follows:
+                ul
+                    li to determine foundation for engineering structure according to exposures and dimensions / loads supplied to us
+                    li for plain foundation, to calculate foundation depth, foundation body dimensions, and to calculate subsidence of foundation body
+                    li for a pile foundation, to select the type, diameter and depth of pile, to calculate ultimate load bearing capacity of piles, the pile subsidence and displacement, taking into account - if necessary - negative skin friction as well
+                    li to examine and evaluate test load of piles
+                    li to calculate the difference in subsidence between abutments and piers, making a proposal for minimizing the differences in subsidence
+                    li to determine backfill construction
+                    li when designing an underpass, to determine earth pressure and groundwater pressure
+                    li to design working pit containment, drainage
+                    li Etc.
+                p To view our major references concerning engineering structures, please click to the following link.
+                    a.greenlink(href="http://www.geoterra.hu/hu/references", title="references")  >>>
+
+                h2 Geotechnical design – Railway Engineering
+
+                p Under construction. Please heck back in a few days.
+                p To view our major references concerning railway engineering, please click to the following link.
+                    a.greenlink(href="http://www.geoterra.hu/hu/references", title="references")  >>>
+
+                h2 Geotechnical design – Public utility lines
+
+                p The major geotechnical tasks arising in connection with designing public utility lines include, but are not limited to, as follows:
+                ul
+                    li to determine soils along the public utility routes
+                    li to calculate working pit stability, to design working space containment
+                    li for a high groundwater level, to design drainage for working pits
+                    li for a pipe press-through, to determine geophysical parameters required for designing the pressing operation and to issue geotechnical designs
+                    li to determine requirements specific to backfill
+                p To view our major references concerning Public Utility Lines, please click to the following link.
+                    a.greenlink(href="http://www.geoterra.hu/hu/references", title="references")  >>>
+
+                h2 Geotechnical design – Civil engineering
+
+                p Nowadays, due to the dense building-to-land ratio of cities, to the propagation of settlements, and to the high landplot prices, more and more frequently occurs that areas with unfavourable conditions for foundation will be built up. Such unfavourable or hard to build areas require, in many cases, special design tasks. Designing vacant plot buildings experienced in big cities and multi-floor deep garages also bring up a number of geotechnical problems.
+                p The major geotechnical tasks related to civil engineering include, but are not limited to, as follows:
+                ul
+                    li to select the way for foundation, as a function of ground, groundwater conditions, and loads transferred from the building
+                    li to design drainage, with special attention to basement and multiple-floor deep garages
+                    li to design working space containment
+                    li to reveal existing foundation body in the case of additional floor construction onto an existing building, to check increased demand on load bearing capacity, and - if necessary - to reinforce existing foundation bodies
+                    li for an additional attached building, to minimize difference in movements between building portions
+                    li for industrial facilities, to design foundation for machines, units, taking into account increased stresses and possible dynamic loads
+                    li to design foundation for antenna towers, water storage towers, reservoirs.
+                p To view our major references concerning civil engineering, please click to the following link.
+                    a.greenlink(href="http://www.geoterra.hu/hu/references", title="references")  >>>
+                a(href="/hu/tevekenyseg", title="tevekenyseg")
+                    img.flag(src='/img/hu_flag.png')
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+
+        script(src='/js/pgwslider.js')
+        script(src='/js/script.min.js')
